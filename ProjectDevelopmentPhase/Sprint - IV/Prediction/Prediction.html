@@ -1,0 +1,75 @@
+<Html>
+<head>
+<title> LIVER PATIENT PREDICTION </title>
+<h1> Prediction page: </h1>
+<h2><center>LIVER PATIENT PREDICTION</center></h2> </head>
+<center>
+<body>
+<br>
+<br>
+<form action="/data_predict" method="POST">
+    <br>
+    <br>
+    <br>
+&nbsp; &nbsp;&nbsp;Age : &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender :
+    <br>
+    <br>
+    <input type="number" id="Age" placeholder="Age " name="Age" style="width: 190px ; margin-left:17px;">  <input type="number" id="Gender"
+        placeholder="Gender (Male:1 , female:0)" name="Gender" style="width: 190px ; margin-left: 97px;">
+    <br>
+    <br>
+    
+    &nbsp; &nbsp;&nbsp;Total_Bilirubin :&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Direct_Bilirubin :
+    <br>
+    <br> <input type="text" id= "Total_Bilirubin" placeholder="Total_Bilirubin"
+        name="Total_Bilirubin" style="width: 190px ; margin-left:17px;">
+     <input type="text" id="Direct_Bilirubin" placeholder="Direct_Bilirubin"
+        name="Direct_Bilirubin" style="width: 190px ; margin-left: 97px;">
+    
+    <br>
+    <br>
+    &nbsp; &nbsp;&nbsp;Alkaline Phosphotase:&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alamine Aminotransferase:
+    <br>
+    <br>
+    <input type="text" id="Alkaline_Phosphotase" placeholder="Alkaline_Phosphotase"
+        name="Alkaline_Phosphotase" style="width: 190px ; margin-left: 17px;">
+     <input type="text" id="Alamine_Aminotransferase"
+        placeholder="Alamine_Aminotransferase" name="Alamine_Aminotransferase" style="width: 190px ; margin-left: 95px;">
+    <br>
+    <br>
+    
+    &nbsp; &nbsp;&nbsp;Aspartate_Aminotransferase:&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Total Protiens:
+    <br>
+    <br>
+     <input type=" text" id="Aspartate_Aminotransferase"
+        placeholder="Aspartate_Aminotransferase" name="Aspartate_Aminotransferase" style="width: 190px ; margin-left: 17px;">
+    <input type=" text" id="Total_Protiens" placeholder="Total_Protiens" name="Total_Protiens" style="width: 190px ; margin-left: 97px;">
+    
+    <br>
+    <br>
+    
+    &nbsp; &nbsp;&nbsp;Albumin:&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Albumin and Globulin Ratio:
+    <br>
+    <br> 
+    <input type="text" id="Albumin" placeholder="Albumin" name="Albumin" style="width: 190px ; margin-left:17px;">
+     <input type="text" id="Albumin_and_Globulin_Ratio"
+        placeholder="Albumin_and_Globulin_Ratio" name="Albumin_and_Globulin_Ratio" style="width: 190px ; margin-left: 100px;">
+    <br>
+    <br>
+    <br>
+    
+    <button type="submit" style="width: 100px ; margin-left: 200px;">Predict</button>
+    <a href="{{ url_for('data_predict') }}"></a>
+
+
+
+
+
+</form>
+</body>
+</center>
+</html>
